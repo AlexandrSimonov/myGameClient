@@ -1,0 +1,15 @@
+<div class="rblock">
+  <button v-on:click="vmap = true">MAP</button>
+
+  <div class="map" v-if="vmap">
+    <div class="cls"><button v-on:click="vmap = false">close</button></div>
+
+    <div>Вы сейчас находитесь в комнате: {{ map.room}}</div>
+
+    <h4>Извесные комнаты</h4>
+    <div v-for="el in map.knownRooms">{{el.id}} <button v-if="map.room !== el.id" v-on:click="goToRoom(el.id)">Постетить</button></div>
+    <div>
+      <button v-on:click="goToRandomRoom">Пойти в случайную комнату</button>
+    </div>
+  </div>
+</div>

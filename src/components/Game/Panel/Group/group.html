@@ -1,0 +1,24 @@
+<div class="rblock">
+  <button v-on:click="list = true">GROUP</button>
+  <div class="list" v-if="list">
+    <div class="listClose" v-on:click="list = false">x</div>
+
+    <div v-if="group.id !== -1">
+      <div class="idGroup">ID: {{group.id}}</div>
+      <div class="leader">Leader: {{group.leader.login}}</div>
+      <div class="header">Участники</div>
+      <div class="usr" v-for="el in group.users">{{el.login}}</div>
+      <div class="header">Приглашенные</div>
+      <div class="usr" v-for="el in group.invites">{{el.login}}</div>
+      <h5 class="header">Пригласить</h5>
+      <form class="usr" v-on:submit.prevent="inviteUser">
+        <input type="text" placeholder="ID" v-model="inviteID">
+        <input type="submit">
+      </form>
+    </div>
+
+    <div v-else>
+      <button v-on:click="newGroup">Создать группу</button>
+    </div>
+  </div>
+</div>

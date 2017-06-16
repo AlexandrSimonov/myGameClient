@@ -1,0 +1,32 @@
+.list{
+  width: 200px;  
+  position: absolute;
+  right: -5px;
+  background: #fff;
+  color: #000;
+  min-height: 50px;
+  box-shadow: 0px 2px 9px 0px #000;
+  border-radius: 5px;
+  top: 0px;
+  z-index: 9;
+}
+
+.listClose{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #da0a0a;
+  width: 20px;
+  height: 19px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-family: monospace;
+  border-radius: 0 5px;
+  font-weight: bold;
+  padding-top: 1px;
+}
+
+.idGroup, .leader, .header, .usr{
+  margin: 2px 14px;
+}

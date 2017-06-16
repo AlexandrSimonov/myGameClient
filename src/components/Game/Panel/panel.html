@@ -1,0 +1,10 @@
+<div class="panel">
+  <div class="headPanel">
+    <div class="login">LOGIN: {{login}}</div>
+    <group />
+    <mapa />
+  </div>
+
+  <h4>Приглашения</h4>
+  <div v-for="el in invites.messages">{{el.message}} <button v-on:click="yes(el.id)">y</button><button v-on:click="no(el.id)">n</button></div>
+</div>

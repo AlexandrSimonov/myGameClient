@@ -1,0 +1,37 @@
+body, html{
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, sans-serif
+}
+.panel{
+  position: absolute;
+  top:0;
+  width:100%;
+}
+
+.headPanel{
+  background: #5f0c0c;
+  color: #fff;
+  padding: 15px 0;
+  width:100%;
+}
+
+.login{
+  font-size: 12px;
+  margin: 0 30px;
+  display: inline-block;
+}
+
+.headPanel > button {
+  background: #e4e4e4;
+  border: 0;
+  padding: 4px 8px;
+  float: right;
+}
+
+.rblock{
+  display: inline-block;
+  float: right;
+  margin: 0 25px;
+  position: relative;
+}
